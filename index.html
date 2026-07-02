@@ -34,14 +34,12 @@
       
       --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     }
-
     /* GLOBAL RESET & STYLES */
     * {
       box-sizing: border-box;
       margin: 0;
       padding: 0;
     }
-
     body {
       font-family: 'Outfit', sans-serif;
       background: var(--bg-gradient);
@@ -52,7 +50,6 @@
       overflow-x: hidden;
       line-height: 1.5;
     }
-
     /* GLASSMORPHISM BACKGROUND ACCENTS */
     .bg-glow-1 {
       position: absolute;
@@ -64,7 +61,6 @@
       pointer-events: none;
       z-index: 0;
     }
-
     .bg-glow-2 {
       position: absolute;
       bottom: -10%;
@@ -75,7 +71,6 @@
       pointer-events: none;
       z-index: 0;
     }
-
     /* CONTAINER */
     .container {
       width: 100%;
@@ -86,7 +81,6 @@
       z-index: 1;
       flex: 1;
     }
-
     /* HEADER */
     header {
       display: flex;
@@ -100,7 +94,6 @@
       padding: 1.25rem 2rem;
       box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
     }
-
     .logo-area h1 {
       font-size: 1.5rem;
       font-weight: 700;
@@ -109,19 +102,16 @@
       -webkit-text-fill-color: transparent;
       letter-spacing: -0.5px;
     }
-
     .logo-area p {
       font-size: 0.85rem;
       color: var(--text-secondary);
       margin-top: 0.1rem;
     }
-
     .controls {
       display: flex;
       align-items: center;
       gap: 1rem;
     }
-
     /* BUTTONS */
     .btn {
       display: inline-flex;
@@ -138,31 +128,26 @@
       border: 1px solid transparent;
       outline: none;
     }
-
     .btn-primary {
       background: var(--accent-primary);
       color: #fff;
       box-shadow: 0 4px 14px 0 rgba(139, 92, 246, 0.4);
     }
-
     .btn-primary:hover {
       background: #7c3aed;
       transform: translateY(-2px);
       box-shadow: 0 6px 20px 0 rgba(139, 92, 246, 0.6);
     }
-
     .btn-secondary {
       background: rgba(255, 255, 255, 0.05);
       border-color: var(--card-border);
       color: var(--text-primary);
     }
-
     .btn-secondary:hover {
       background: rgba(255, 255, 255, 0.1);
       border-color: var(--text-secondary);
       transform: translateY(-1px);
     }
-
     /* STATUS BADGE */
     .status-indicator {
       display: flex;
@@ -174,7 +159,6 @@
       font-size: 0.85rem;
       border: 1px solid rgba(255, 255, 255, 0.05);
     }
-
     .status-dot {
       width: 8px;
       height: 8px;
@@ -183,18 +167,15 @@
       box-shadow: 0 0 8px var(--danger);
       transition: var(--transition-smooth);
     }
-
     .status-dot.active {
       background: var(--success);
       box-shadow: 0 0 8px var(--success);
     }
-
     .status-dot.loading {
       background: var(--warning);
       box-shadow: 0 0 8px var(--warning);
       animation: pulse 1.5s infinite alternate;
     }
-
     /* STATS GRID */
     .stats-grid {
       display: grid;
@@ -202,7 +183,6 @@
       gap: 1.5rem;
       margin-bottom: 2rem;
     }
-
     .stat-card {
       background: var(--card-bg);
       backdrop-filter: blur(12px);
@@ -213,13 +193,11 @@
       position: relative;
       overflow: hidden;
     }
-
     .stat-card:hover {
       border-color: var(--card-border-hover);
       transform: translateY(-3px);
       box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.3);
     }
-
     .stat-card::before {
       content: '';
       position: absolute;
@@ -229,11 +207,9 @@
       height: 100%;
       background: var(--accent-primary);
     }
-
     .stat-card.unique::before { background: var(--accent-secondary); }
     .stat-card.suspicious::before { background: var(--danger); }
     .stat-card.recent::before { background: var(--success); }
-
     .stat-card-title {
       font-size: 0.85rem;
       font-weight: 500;
@@ -241,20 +217,17 @@
       text-transform: uppercase;
       letter-spacing: 0.5px;
     }
-
     .stat-card-value {
       font-size: 2.25rem;
       font-weight: 700;
       margin-top: 0.5rem;
       color: var(--text-primary);
     }
-
     .stat-card-desc {
       font-size: 0.75rem;
       color: var(--text-muted);
       margin-top: 0.25rem;
     }
-
     /* ANALYTICS CONTENT AREA */
     .content-panel {
       background: var(--card-bg);
@@ -265,7 +238,6 @@
       box-shadow: 0 10px 40px rgba(0, 0, 0, 0.4);
       margin-bottom: 2rem;
     }
-
     .panel-header {
       display: flex;
       justify-content: space-between;
@@ -274,24 +246,20 @@
       flex-wrap: wrap;
       gap: 1rem;
     }
-
     .panel-title {
       font-size: 1.2rem;
       font-weight: 600;
     }
-
     .panel-actions {
       display: flex;
       align-items: center;
       gap: 0.75rem;
       flex-wrap: wrap;
     }
-
     /* SEARCH & FILTER INPUTS */
     .search-wrapper {
       position: relative;
     }
-
     .search-input {
       background: rgba(0, 0, 0, 0.25);
       border: 1px solid var(--card-border);
@@ -303,14 +271,12 @@
       width: 250px;
       transition: var(--transition-smooth);
     }
-
     .search-input:focus {
       border-color: var(--accent-primary);
       width: 320px;
       outline: none;
       box-shadow: 0 0 10px var(--accent-primary-glow);
     }
-
     .search-icon {
       position: absolute;
       left: 0.85rem;
@@ -321,7 +287,6 @@
       fill: var(--text-muted);
       pointer-events: none;
     }
-
     .select-dropdown {
       background: rgba(0, 0, 0, 0.25);
       border: 1px solid var(--card-border);
@@ -334,11 +299,9 @@
       outline: none;
       transition: var(--transition-smooth);
     }
-
     .select-dropdown:focus {
       border-color: var(--accent-primary);
     }
-
     /* AUTO REFRESH TICKER */
     .refresh-timer {
       font-size: 0.8rem;
@@ -347,7 +310,6 @@
       align-items: center;
       gap: 0.4rem;
     }
-
     .progress-bar-container {
       width: 60px;
       height: 4px;
@@ -355,26 +317,160 @@
       border-radius: 2px;
       overflow: hidden;
     }
-
     .progress-bar-fill {
       height: 100%;
       background: var(--accent-secondary);
       width: 0%;
       transition: width 1s linear;
     }
-
+    /* ADVANCED FILTERS PANEL */
+    .filters-panel {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 1.5rem;
+      background: rgba(15, 23, 42, 0.45);
+      border: 1px solid var(--card-border);
+      border-radius: 16px;
+      padding: 1.25rem 1.5rem;
+      margin-bottom: 1.5rem;
+      backdrop-filter: blur(8px);
+    }
+    .filter-group {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+    .filter-group .group-label {
+      font-size: 0.75rem;
+      font-weight: 600;
+      color: var(--text-secondary);
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+    .filter-controls-row {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      flex-wrap: wrap;
+    }
+    .custom-date-inputs {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      animation: fadeIn 0.3s ease;
+    }
+    .custom-date-inputs .input-field {
+      padding: 0.5rem 0.75rem;
+      font-size: 0.85rem;
+      background: rgba(0, 0, 0, 0.25);
+      border: 1px solid var(--card-border);
+      border-radius: 10px;
+      color: var(--text-primary);
+      outline: none;
+      font-family: inherit;
+    }
+    .custom-date-inputs .input-field:focus {
+      border-color: var(--accent-primary);
+    }
+    .date-sep {
+      color: var(--text-muted);
+      font-size: 0.85rem;
+    }
+    /* TOGGLE CONTAINER */
+    .toggle-container {
+      display: inline-flex;
+      align-items: center;
+      cursor: pointer;
+      user-select: none;
+      gap: 0.5rem;
+    }
+    .toggle-switch {
+      position: relative;
+      display: inline-block;
+      width: 40px;
+      height: 20px;
+    }
+    .toggle-switch input {
+      opacity: 0;
+      width: 0;
+      height: 0;
+    }
+    .toggle-slider {
+      position: absolute;
+      cursor: pointer;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: rgba(255, 255, 255, 0.1);
+      transition: .3s;
+      border-radius: 20px;
+      border: 1px solid var(--card-border);
+    }
+    .toggle-slider:before {
+      position: absolute;
+      content: "";
+      height: 12px;
+      width: 12px;
+      left: 3px;
+      bottom: 3px;
+      background-color: var(--text-secondary);
+      transition: .3s;
+      border-radius: 50%;
+    }
+    .toggle-switch input:checked + .toggle-slider {
+      background-color: var(--accent-primary);
+      border-color: rgba(139, 92, 246, 0.5);
+    }
+    .toggle-switch input:checked + .toggle-slider:before {
+      transform: translateX(20px);
+      background-color: #fff;
+    }
+    .toggle-label {
+      font-size: 0.85rem;
+      color: var(--text-primary);
+    }
+    /* MIN HITS SELECTOR */
+    .min-hits-wrapper {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      background: rgba(0, 0, 0, 0.2);
+      padding: 0.35rem 0.6rem 0.35rem 0.75rem;
+      border-radius: 10px;
+      border: 1px solid var(--card-border);
+    }
+    .min-hits-label {
+      font-size: 0.85rem;
+      color: var(--text-secondary);
+    }
+    .min-hits-input {
+      width: 50px;
+      text-align: center;
+      padding: 0.15rem 0.25rem !important;
+      background: transparent !important;
+      border: none !important;
+      border-bottom: 1px solid var(--card-border) !important;
+      border-radius: 0 !important;
+      color: var(--text-primary);
+      font-family: inherit;
+      font-size: 0.9rem;
+      outline: none;
+    }
+    .min-hits-input:focus {
+      border-bottom-color: var(--accent-primary) !important;
+      box-shadow: none !important;
+    }
     /* TABLE LAYOUT */
     .table-container {
       overflow-x: auto;
       margin-top: 0.5rem;
     }
-
     table {
       width: 100%;
       border-collapse: collapse;
       text-align: left;
     }
-
     th {
       padding: 1rem;
       font-size: 0.85rem;
@@ -384,23 +480,29 @@
       letter-spacing: 0.5px;
       border-bottom: 1px solid rgba(255, 255, 255, 0.05);
     }
-
     td {
       padding: 1.1rem 1rem;
       font-size: 0.9rem;
       border-bottom: 1px solid rgba(255, 255, 255, 0.02);
       color: var(--text-primary);
     }
-
     tr {
       transition: var(--transition-smooth);
     }
-
     tr:hover td {
       background: rgba(255, 255, 255, 0.015);
       color: #fff;
     }
-
+    /* SUSPICIOUS ROW HIGHLIGHTING */
+    tr.row-suspicious td {
+      background: rgba(239, 68, 68, 0.03) !important;
+    }
+    tr.row-suspicious td:first-child {
+      border-left: 4px solid var(--danger);
+    }
+    tr.row-suspicious:hover td {
+      background: rgba(239, 68, 68, 0.06) !important;
+    }
     /* TABLE IP ROW STYLING */
     .ip-address {
       font-family: monospace;
@@ -413,12 +515,10 @@
       align-items: center;
       gap: 0.35rem;
     }
-
     .ip-address:hover {
       color: #fff;
       text-decoration: underline;
     }
-
     .ip-count-badge {
       display: inline-flex;
       align-items: center;
@@ -428,43 +528,36 @@
       font-size: 0.75rem;
       font-weight: 700;
     }
-
     .badge-safe {
       background: var(--success-glow);
       color: var(--success);
       border: 1px solid rgba(16, 185, 129, 0.2);
     }
-
     .badge-warning {
       background: var(--warning-glow);
       color: var(--warning);
       border: 1px solid rgba(245, 158, 11, 0.2);
     }
-
     .badge-danger {
       background: var(--danger-glow);
       color: var(--danger);
       border: 1px solid rgba(239, 68, 68, 0.3);
       animation: pulse 2s infinite;
     }
-
     /* DEVICE / AGENT INFO */
     .agent-info {
       display: flex;
       flex-direction: column;
       gap: 0.15rem;
     }
-
     .agent-primary {
       font-weight: 500;
       color: var(--text-primary);
     }
-
     .agent-sub {
       font-size: 0.75rem;
       color: var(--text-muted);
     }
-
     /* REFERRER & URL INFO */
     .source-cell {
       max-width: 200px;
@@ -474,7 +567,6 @@
       font-size: 0.85rem;
       color: var(--text-secondary);
     }
-
     /* DRAWER / SETTINGS PANEL */
     .drawer-overlay {
       position: fixed;
@@ -489,12 +581,10 @@
       transition: var(--transition-smooth);
       z-index: 10;
     }
-
     .drawer-overlay.open {
       opacity: 1;
       visibility: visible;
     }
-
     .drawer {
       position: fixed;
       top: 0;
@@ -511,22 +601,18 @@
       flex-direction: column;
       gap: 2rem;
     }
-
     .drawer.open {
       right: 0;
     }
-
     .drawer-header {
       display: flex;
       justify-content: space-between;
       align-items: center;
     }
-
     .drawer-title {
       font-size: 1.3rem;
       font-weight: 600;
     }
-
     .btn-close {
       background: none;
       border: none;
@@ -535,23 +621,19 @@
       cursor: pointer;
       transition: var(--transition-smooth);
     }
-
     .btn-close:hover {
       color: #fff;
     }
-
     .form-group {
       display: flex;
       flex-direction: column;
       gap: 0.5rem;
     }
-
     label {
       font-size: 0.85rem;
       font-weight: 500;
       color: var(--text-secondary);
     }
-
     .input-field {
       background: rgba(0, 0, 0, 0.3);
       border: 1px solid var(--card-border);
@@ -563,38 +645,32 @@
       outline: none;
       transition: var(--transition-smooth);
     }
-
     .input-field:focus {
       border-color: var(--accent-primary);
       box-shadow: 0 0 8px var(--accent-primary-glow);
     }
-
     .help-text {
       font-size: 0.75rem;
       color: var(--text-muted);
       line-height: 1.4;
     }
-
     /* PAGINATION & EMPTY STATES */
     .empty-state {
       text-align: center;
       padding: 4rem 2rem;
       color: var(--text-muted);
     }
-
     .empty-state svg {
       width: 48px;
       height: 48px;
       margin-bottom: 1rem;
       fill: var(--text-muted);
     }
-
     .empty-state h3 {
       color: var(--text-secondary);
       margin-bottom: 0.5rem;
       font-weight: 500;
     }
-
     .pagination {
       display: flex;
       justify-content: space-between;
@@ -603,12 +679,10 @@
       border-top: 1px solid rgba(255, 255, 255, 0.03);
       padding-top: 1.25rem;
     }
-
     .page-info {
       font-size: 0.85rem;
       color: var(--text-secondary);
     }
-
     /* FOOTER */
     footer {
       text-align: center;
@@ -618,17 +692,18 @@
       border-top: 1px solid rgba(255, 255, 255, 0.02);
       margin-top: auto;
     }
-
     /* KEYFRAMES & ANIMATIONS */
     @keyframes pulse {
       0% { opacity: 0.6; box-shadow: 0 0 4px currentColor; }
       100% { opacity: 1; box-shadow: 0 0 12px currentColor; }
     }
-
     @keyframes spin {
       to { transform: rotate(360deg); }
     }
-
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(-5px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
     .spinner {
       display: inline-block;
       width: 16px;
@@ -638,7 +713,6 @@
       border-radius: 50%;
       animation: spin 0.8s linear infinite;
     }
-
     /* RESPONSIVE DESIGN */
     @media (max-width: 900px) {
       header {
@@ -667,15 +741,16 @@
         width: 100%;
         right: -100%;
       }
+      .filters-panel {
+        grid-template-columns: 1fr;
+      }
     }
   </style>
 </head>
 <body>
-
   <!-- GLOW DECORATIONS -->
   <div class="bg-glow-1"></div>
   <div class="bg-glow-2"></div>
-
   <div class="container">
     <!-- DASHBOARD HEADER -->
     <header>
@@ -694,31 +769,29 @@
         </button>
       </div>
     </header>
-
     <!-- KPI STATS CARDS -->
     <div class="stats-grid">
       <div class="stat-card">
-        <div class="stat-card-title">Total Logs</div>
+        <div class="stat-card-title" id="lblTotalLogs">Filtered Clicks</div>
         <div id="statTotalLogs" class="stat-card-value">0</div>
-        <div class="stat-card-desc">Total HTTP tracker requests processed</div>
+        <div class="stat-card-desc">Total clicks under active filter</div>
       </div>
       <div class="stat-card unique">
         <div class="stat-card-title">Unique IPs</div>
         <div id="statUniqueIps" class="stat-card-value">0</div>
-        <div class="stat-card-desc">Distinct client machines flagged</div>
+        <div class="stat-card-desc">Distinct visitors matching filter</div>
       </div>
       <div class="stat-card suspicious">
-        <div class="stat-card-title">Exclusion Targets</div>
+        <div class="stat-card-title">Flagged IPs</div>
         <div id="statSuspiciousIps" class="stat-card-value">0</div>
-        <div class="stat-card-desc">IPs with &ge; 3 hits (Exclusion eligible)</div>
+        <div class="stat-card-desc">Suspicious IPs (&ge; 3 total hits) matching filter</div>
       </div>
       <div class="stat-card recent">
         <div class="stat-card-title">Last 24 Hours</div>
         <div id="statRecentLogs" class="stat-card-value">0</div>
-        <div class="stat-card-desc">Events recorded in the past 24 hrs</div>
+        <div class="stat-card-desc">Active logs recorded in past 24 hrs</div>
       </div>
     </div>
-
     <!-- MAIN TABLE PANEL -->
     <div class="content-panel">
       <div class="panel-header">
@@ -743,7 +816,6 @@
             <svg class="search-icon" viewBox="0 0 24 24"><path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/></svg>
             <input type="text" id="searchInput" class="search-input" placeholder="Search by IP, OS, Browser, Page..." oninput="handleSearch()">
           </div>
-
           <!-- Export CSV -->
           <button class="btn btn-secondary" onclick="exportToCSV()" id="exportBtn" disabled>
             <svg style="width: 14px; height: 14px; fill: currentColor;" viewBox="0 0 24 24"><path d="M19.35 10.04C18.67 6.59 15.64 4 12 4 9.11 4 6.6 5.64 5.35 8.04 2.34 8.36 0 10.91 0 14c0 3.31 2.69 6 6 6h13c2.76 0 5-2.24 5-5 0-2.64-2.05-4.78-4.65-4.96zM17 13l-5 5-5-5h3V9h4v4h3z"/></svg>
@@ -751,7 +823,45 @@
           </button>
         </div>
       </div>
-
+      <!-- ADVANCED FILTERS PANEL -->
+      <div class="filters-panel">
+        <!-- Date Filtering Group -->
+        <div class="filter-group">
+          <label class="group-label">Date Range Filter</label>
+          <div class="filter-controls-row">
+            <select id="datePreset" class="select-dropdown" onchange="handleDatePresetChange()">
+              <option value="all">All Time</option>
+              <option value="today">Today</option>
+              <option value="yesterday">Yesterday</option>
+              <option value="last7">Last 7 Days</option>
+              <option value="custom">Custom Range</option>
+            </select>
+            <div id="customDateRange" class="custom-date-inputs" style="display: none;">
+              <input type="date" id="startDate" class="input-field" onchange="applyFilters()">
+              <span class="date-sep">to</span>
+              <input type="date" id="endDate" class="input-field" onchange="applyFilters()">
+            </div>
+          </div>
+        </div>
+        <!-- Frequency & Duplicate Filter Group -->
+        <div class="filter-group">
+          <label class="group-label">Frequency & Integrity</label>
+          <div class="filter-controls-row" style="gap: 1.5rem;">
+            <label class="toggle-container">
+              <span class="toggle-switch">
+                <input type="checkbox" id="duplicatesOnly" onchange="applyFilters()">
+                <span class="toggle-slider"></span>
+              </span>
+              <span class="toggle-label">Show Duplicates Only</span>
+            </label>
+            
+            <div class="min-hits-wrapper">
+              <span class="min-hits-label">Min Hits &ge;</span>
+              <input type="number" id="minHits" class="min-hits-input" min="1" value="1" oninput="applyFilters()">
+            </div>
+          </div>
+        </div>
+      </div>
       <!-- DATA TABLE -->
       <div class="table-container">
         <table id="logsTable">
@@ -775,7 +885,6 @@
           </tbody>
         </table>
       </div>
-
       <!-- PAGINATION FOOTER -->
       <div class="pagination">
         <div class="page-info" id="paginationInfo">Showing 0 of 0 entries</div>
@@ -786,7 +895,6 @@
       </div>
     </div>
   </div>
-
   <!-- SETTINGS DRAWER -->
   <div class="drawer-overlay" id="drawerOverlay" onclick="toggleDrawer(false)"></div>
   <div class="drawer" id="settingsDrawer">
@@ -802,25 +910,22 @@
         Paste the "Web App" deployment URL generated in the Google Apps Script environment. Ensure you selected execute as <strong>Me</strong> and access for <strong>Anyone</strong>.
       </div>
     </div>
-
     <div class="form-group" style="margin-top: 1rem;">
       <button class="btn btn-primary" onclick="saveConfiguration()">Save Configuration</button>
       <button class="btn btn-secondary" onclick="toggleDrawer(false)" style="margin-top: 0.5rem;">Cancel</button>
     </div>
   </div>
-
   <!-- FOOTER -->
   <footer>
     ShieldGate Dashboard - Production Grade IP Anti-Fraud Console
   </footer>
-
   <script>
     // DASHBOARD APPLICATION LOGIC
     var state = {
       webAppUrl: localStorage.getItem("shieldgate_web_app_url") || "https://script.google.com/macros/s/AKfycbxdTH30bqDciXgYi__5PAITQwxC4_yWbCdUDNewvQtWbNNB5CvRUsMkV0-7jRdMnioM/exec",
       logs: [],
       filteredLogs: [],
-      ipCounts: {},
+      ipCounts: {}, // Historical IP occurrences count based on all logs loaded
       currentPage: 1,
       pageSize: 15,
       refreshIntervalId: null,
@@ -828,7 +933,6 @@
       refreshIntervalDuration: 0,
       countdownIntervalId: null
     };
-
     // DOM References
     var statusDot = document.getElementById("statusDot");
     var statusText = document.getElementById("statusText");
@@ -847,14 +951,12 @@
         toggleDrawer(true);
       }
     });
-
     function updateStatus(type, label) {
       statusDot.className = "status-dot";
       if (type === "active") statusDot.classList.add("active");
       if (type === "loading") statusDot.classList.add("loading");
       statusText.innerText = label;
     }
-
     function toggleDrawer(isOpen) {
       if (isOpen) {
         settingsDrawer.classList.add("open");
@@ -864,7 +966,6 @@
         drawerOverlay.classList.remove("open");
       }
     }
-
     function saveConfiguration() {
       var urlValue = webAppUrlInput.value.trim();
       if (!urlValue) {
@@ -877,7 +978,6 @@
       updateStatus("loading", "Connecting...");
       fetchLogs();
     }
-
     // Network Fetch
     function fetchLogs() {
       if (!state.webAppUrl) return;
@@ -900,38 +1000,138 @@
         .catch(function(err) {
           console.error("Fetch logs failed:", err);
           updateStatus("error", "Error Fetching Data");
-          alert("Failed to retrieve logs. Please verify your Web App deployment settings, spreadsheet permissions, and ensure CORS is enabled correctly (via doGet output parameters).");
+          alert("Failed to retrieve logs. Please verify your Web App deployment settings, spreadsheet permissions, and ensure CORS is enabled correctly.");
         });
     }
-
-    // Aggregate Analytics
+    // Aggregate Analytics on initial data load
     function processAnalytics() {
-      // Calculate occurrences
+      // Calculate overall historical occurrences across ALL loaded logs
       state.ipCounts = {};
       state.logs.forEach(function(item) {
         if (item.ip && item.ip !== "Unknown") {
-          state.ipCounts[item.ip] = (state.ipCounts[item.ip] || 0) + 1;
+          var cleanIp = item.ip.toString().trim();
+          state.ipCounts[cleanIp] = (state.ipCounts[cleanIp] || 0) + 1;
         }
       });
-
-      // Update KPIs
-      document.getElementById("statTotalLogs").innerText = state.logs.length;
+      // Apply unified filtering logic
+      applyFilters();
+    }
+    // Date Preset Listener
+    function handleDatePresetChange() {
+      var preset = document.getElementById("datePreset").value;
+      var customDiv = document.getElementById("customDateRange");
+      if (preset === "custom") {
+        customDiv.style.display = "inline-flex";
+      } else {
+        customDiv.style.display = "none";
+        // Clear custom inputs when preset changes
+        document.getElementById("startDate").value = "";
+        document.getElementById("endDate").value = "";
+      }
+      applyFilters();
+    }
+    // Advanced Filtering Handler
+    function applyFilters() {
+      var query = document.getElementById("searchInput").value.toLowerCase().trim();
+      var datePreset = document.getElementById("datePreset").value;
+      var duplicatesOnly = document.getElementById("duplicatesOnly").checked;
+      var minHits = parseInt(document.getElementById("minHits").value) || 1;
       
-      var uniqueCount = Object.keys(state.ipCounts).length;
+      // Custom date inputs
+      var startDateVal = document.getElementById("startDate").value;
+      var endDateVal = document.getElementById("endDate").value;
+      var now = new Date();
+      var startOfToday = new Date(now.getFullYear(), now.getMonth(), now.getDate());
+      var startOfYesterday = new Date(startOfToday.getTime() - 24 * 60 * 60 * 1000);
+      var startOf7DaysAgo = new Date(startOfToday.getTime() - 7 * 24 * 60 * 60 * 1000);
+      // Perform filters
+      state.filteredLogs = state.logs.filter(function(item) {
+        // 1. Date presets check
+        if (item.timestamp) {
+          var logTime = new Date(item.timestamp);
+          if (!isNaN(logTime.getTime())) {
+            if (datePreset === "today") {
+              if (logTime < startOfToday) return false;
+            } else if (datePreset === "yesterday") {
+              if (logTime < startOfYesterday || logTime >= startOfToday) return false;
+            } else if (datePreset === "last7") {
+              if (logTime < startOf7DaysAgo) return false;
+            } else if (datePreset === "custom") {
+              if (startDateVal) {
+                var startLimit = new Date(startDateVal + "T00:00:00");
+                if (logTime < startLimit) return false;
+              }
+              if (endDateVal) {
+                var endLimit = new Date(endDateVal + "T23:59:59");
+                if (logTime > endLimit) return false;
+              }
+            }
+          } else if (datePreset !== "all") {
+            return false;
+          }
+        } else if (datePreset !== "all") {
+          return false;
+        }
+        // 2. Frequency Filters
+        var ipCount = state.ipCounts[item.ip] || 0;
+        if (duplicatesOnly && ipCount <= 1) {
+          return false;
+        }
+        if (ipCount < minHits) {
+          return false;
+        }
+        // 3. Global Search Input
+        if (query) {
+          var ip = (item.ip || "").toLowerCase();
+          var ua = (item.userAgent || "").toLowerCase();
+          var page = (item.pageUrl || "").toLowerCase();
+          var ref = (item.referrer || "").toLowerCase();
+          
+          var agent = parseUserAgent(item.userAgent);
+          var os = agent.os.toLowerCase();
+          var browser = agent.browser.toLowerCase();
+          var match = ip.includes(query) || 
+                      ua.includes(query) || 
+                      page.includes(query) || 
+                      ref.includes(query) || 
+                      os.includes(query) || 
+                      browser.includes(query);
+          
+          if (!match) return false;
+        }
+        return true;
+      });
+      // Update KPI Cards and Render
+      updateKPIs();
+      state.currentPage = 1;
+      renderTable();
+    }
+    // Dynamic metrics updater
+    function updateKPIs() {
+      // Total Clicks (Filtered)
+      document.getElementById("statTotalLogs").innerText = state.filteredLogs.length;
+      // Unique IPs under the active filter
+      var filteredIpCounts = {};
+      state.filteredLogs.forEach(function(item) {
+        if (item.ip && item.ip !== "Unknown") {
+          var cleanIp = item.ip.toString().trim();
+          filteredIpCounts[cleanIp] = (filteredIpCounts[cleanIp] || 0) + 1;
+        }
+      });
+      var uniqueCount = Object.keys(filteredIpCounts).length;
       document.getElementById("statUniqueIps").innerText = uniqueCount;
-
-      var suspiciousCount = 0;
-      for (var ip in state.ipCounts) {
+      // Flagged IPs (IPs matching active filter which have >= 3 overall occurrences historically)
+      var flaggedCount = 0;
+      for (var ip in filteredIpCounts) {
         if (state.ipCounts[ip] >= 3) {
-          suspiciousCount++;
+          flaggedCount++;
         }
       }
-      document.getElementById("statSuspiciousIps").innerText = suspiciousCount;
-
-      // Count last 24 hours
+      document.getElementById("statSuspiciousIps").innerText = flaggedCount;
+      // Count last 24 hours (Matching current filter conditions)
       var past24hCount = 0;
       var now = new Date();
-      state.logs.forEach(function(item) {
+      state.filteredLogs.forEach(function(item) {
         if (item.timestamp) {
           var logTime = new Date(item.timestamp);
           if (!isNaN(logTime.getTime())) {
@@ -943,70 +1143,35 @@
         }
       });
       document.getElementById("statRecentLogs").innerText = past24hCount;
-
-      // Apply current search filters
-      handleSearch();
     }
-
     // Helper User Agent Parser
     function parseUserAgent(ua) {
       if (!ua) return { os: "Unknown", browser: "Unknown" };
       
       var os = "Unknown OS";
       var browser = "Unknown Browser";
-
       // Detect OS
       if (/Windows/i.test(ua)) os = "Windows";
       else if (/Macintosh|Mac OS X/i.test(ua)) os = "macOS";
       else if (/iPhone|iPad|iPod/i.test(ua)) os = "iOS";
       else if (/Android/i.test(ua)) os = "Android";
       else if (/Linux/i.test(ua)) os = "Linux";
-
       // Detect Browser
       if (/Chrome/i.test(ua) && !/Edg/i.test(ua) && !/OPR/i.test(ua)) browser = "Chrome";
       else if (/Safari/i.test(ua) && !/Chrome/i.test(ua)) browser = "Safari";
       else if (/Firefox/i.test(ua)) browser = "Firefox";
       else if (/Edg/i.test(ua)) browser = "Edge";
       else if (/OPR|Opera/i.test(ua)) browser = "Opera";
-
       return { os: os, browser: browser };
     }
-
-    // Search and Filters
+    // Handle search input events
     function handleSearch() {
-      var query = document.getElementById("searchInput").value.toLowerCase().trim();
-      
-      if (!query) {
-        state.filteredLogs = state.logs;
-      } else {
-        state.filteredLogs = state.logs.filter(function(item) {
-          var ip = (item.ip || "").toLowerCase();
-          var ua = (item.userAgent || "").toLowerCase();
-          var page = (item.pageUrl || "").toLowerCase();
-          var ref = (item.referrer || "").toLowerCase();
-          
-          var agent = parseUserAgent(item.userAgent);
-          var os = agent.os.toLowerCase();
-          var browser = agent.browser.toLowerCase();
-
-          return ip.includes(query) || 
-                 ua.includes(query) || 
-                 page.includes(query) || 
-                 ref.includes(query) || 
-                 os.includes(query) || 
-                 browser.includes(query);
-        });
-      }
-      
-      state.currentPage = 1;
-      renderTable();
+      applyFilters();
     }
-
-    // Render IP Table Content
+    // Render Table
     function renderTable() {
       var tbody = document.getElementById("logsTableBody");
       tbody.innerHTML = "";
-
       if (state.filteredLogs.length === 0) {
         tbody.innerHTML = `
           <tr>
@@ -1022,16 +1187,21 @@
         document.getElementById("btnNextPage").disabled = true;
         return;
       }
-
       // Pagination slice
       var start = (state.currentPage - 1) * state.pageSize;
       var end = Math.min(start + state.pageSize, state.filteredLogs.length);
       var paginatedItems = state.filteredLogs.slice(start, end);
-
       paginatedItems.forEach(function(item) {
         var tr = document.createElement("tr");
         
-        // Parse date nicely
+        // Count total hits (overall history)
+        var count = state.ipCounts[item.ip] || 0;
+        
+        // Highlight rows if IP appears 3 or more times (visual alert)
+        if (count >= 3) {
+          tr.classList.add("row-suspicious");
+        }
+        // Format dates nicely
         var dateFormatted = "Unknown Date";
         if (item.timestamp) {
           var dateObj = new Date(item.timestamp);
@@ -1039,12 +1209,10 @@
             dateFormatted = dateObj.toLocaleDateString() + ' ' + dateObj.toLocaleTimeString();
           }
         }
-
-        // Parse User Agent
+        // Parse user agent
         var agent = parseUserAgent(item.userAgent);
         
-        // IP occurrences count logic
-        var count = state.ipCounts[item.ip] || 0;
+        // Status badge configuration
         var badgeClass = "badge-safe";
         var badgeLabel = count + " hits (Safe)";
         if (count >= 3) {
@@ -1054,7 +1222,6 @@
           badgeClass = "badge-warning";
           badgeLabel = "2 hits (Warn)";
         }
-
         tr.innerHTML = `
           <td>
             <div style="font-weight: 500;">${dateFormatted}</div>
@@ -1087,13 +1254,11 @@
         
         tbody.appendChild(tr);
       });
-
-      // Update Pagination Controls
+      // Update pagination info
       document.getElementById("paginationInfo").innerText = `Showing ${start + 1}-${end} of ${state.filteredLogs.length} entries`;
       document.getElementById("btnPrevPage").disabled = state.currentPage === 1;
       document.getElementById("btnNextPage").disabled = end >= state.filteredLogs.length;
     }
-
     function changePage(direction) {
       var next = state.currentPage + direction;
       var maxPage = Math.ceil(state.filteredLogs.length / state.pageSize);
@@ -1102,39 +1267,30 @@
         renderTable();
       }
     }
-
     // Auto Refresh Manager
     function setupAutoRefresh() {
       var select = document.getElementById("refreshRate");
       var rateSeconds = parseInt(select.value);
-
-      // Reset intervals
       if (state.refreshIntervalId) clearInterval(state.refreshIntervalId);
       if (state.countdownIntervalId) clearInterval(state.countdownIntervalId);
       
       var label = document.getElementById("timerLabel");
       var barContainer = document.getElementById("progressBarContainer");
       var barFill = document.getElementById("progressBarFill");
-
       if (rateSeconds === 0) {
         label.innerText = "Auto-refresh: Off";
         barContainer.style.display = "none";
         return;
       }
-
       state.refreshIntervalDuration = rateSeconds;
       state.refreshCountdown = rateSeconds;
       barContainer.style.display = "block";
       barFill.style.width = "100%";
       label.innerText = `Refreshing in ${state.refreshCountdown}s`;
-
-      // Main refresh fetcher
       state.refreshIntervalId = setInterval(function() {
         fetchLogs();
         state.refreshCountdown = state.refreshIntervalDuration;
       }, rateSeconds * 1000);
-
-      // Precise 1-second visual countdown
       state.countdownIntervalId = setInterval(function() {
         state.refreshCountdown--;
         if (state.refreshCountdown < 0) {
@@ -1145,16 +1301,14 @@
         barFill.style.width = percentage + "%";
       }, 1000);
     }
-
     // Export Logs to CSV
     function exportToCSV() {
-      if (state.logs.length === 0) return;
+      if (state.filteredLogs.length === 0) return;
       
       var csvContent = "data:text/csv;charset=utf-8,";
-      // Headers
       csvContent += "Timestamp,IP Address,User Agent,Referrer,Page URL\r\n";
       
-      state.logs.forEach(function(item) {
+      state.filteredLogs.forEach(function(item) {
         var row = [
           '"' + (item.timestamp || "").toString().replace(/"/g, '""') + '"',
           '"' + (item.ip || "").replace(/"/g, '""') + '"',
@@ -1164,11 +1318,10 @@
         ];
         csvContent += row.join(",") + "\r\n";
       });
-
       var encodedUri = encodeURI(csvContent);
       var link = document.createElement("a");
       link.setAttribute("href", encodedUri);
-      link.setAttribute("download", "shieldgate_ip_logs_" + new Date().toISOString().slice(0, 10) + ".csv");
+      link.setAttribute("download", "shieldgate_filtered_logs_" + new Date().toISOString().slice(0, 10) + ".csv");
       document.body.appendChild(link);
       link.click();
       document.body.removeChild(link);
